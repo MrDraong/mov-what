@@ -1,0 +1,5 @@
+<section class="listing">
+    <h2 class="listing-heading">{{ movie.originalTitle }}</h2>
+    <p class="listing-information">{{ movie.releaseDate}}, {{ movie.voteAverage }}</p>
+    <a [routerLink]="['/details', movie.id]">Learn More</a>
+</section>

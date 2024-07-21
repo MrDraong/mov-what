@@ -1,0 +1,19 @@
+<article>
+    <img
+      class="listing-photo"
+      [src]="movie?.posterPath"
+      alt="Poster of {{ movie?.originalTitle }}"
+      crossorigin
+    />
+    <section class="listing-description">
+      <h2 class="listing-heading">{{ movie?.originalTitle }}</h2>
+      <p class="listing-date">{{ movie?.releaseDate }}</p>
+    </section>
+    <section class="listing-features">
+      <h2 class="section-heading">About this movie</h2>
+      <ul>
+        <li>Movie notation : {{ movie?.voteAverage }}</li>
+        <li>Number of votes : {{ movie?.voteCount }}</li>
+      </ul>
+    </section>
+  </article>
